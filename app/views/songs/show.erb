@@ -1,5 +1,6 @@
-Successfully created song.<br>
-Successfully updated song.<br>
+<% if flash.has?(:message) %>
+  <%= flash[:message] %>
+<% end %>
 
 Song: <%= @song.name %><br><br>
 
